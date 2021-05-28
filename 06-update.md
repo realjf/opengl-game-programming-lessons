@@ -40,3 +40,6 @@ int LoadGLTextures()                                    // Load Bitmaps And Conv
 下一个参数告诉SOIL为此纹理创建一个新的ID。回顾第06课中的解释，每个OpenGL纹理都通过其自己的ID进行访问，如果我们使用glaux，则必须自己生成此ID。但是，如果我们说SOIL_CREATE_NEW_ID，那么SOIL会为我们做到这一点。
 
 最后一个参数允许很多选项，所有选项都记录在头文件SOIL.h中。但是现在我们只需要一个选项，那就是翻转图像的y轴。原因是，几乎所有图像格式都是从左上角开始存储的，但是OpenGL在左下角定义了图像的原点。因此，垂直翻转它可以解决此差异。
+
+
+<a href="/src/06-update.cpp" target="_blank">完整代码</a>
