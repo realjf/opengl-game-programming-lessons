@@ -48,7 +48,7 @@ int LoadGLTextures()
 {
 	glGenTextures(1, &texture[0]);
 	int width, height, nrComponents;
-	unsigned char* image = stbi_load("textures/container2.png", &width, &height, &nrComponents, STBI_rgb_alpha);
+	unsigned char* image = stbi_load("textures/container2.png", &width, &height, &nrComponents, 0);
 	if (image == NULL) {
 		return false;
 	}
